@@ -1,19 +1,21 @@
 import PropTypes from 'prop-types';
 
-function Book({ id, title, category }) {
+function Book({ book, removeBook }) {
   return (
     <tr>
-      <td>{id}</td>
-      <td>{title}</td>
-      <td>{category}</td>
+      <td>{book.id}</td>
+      <td>{book.title}</td>
+      <td>{book.category}</td>
+      <td>
+        <button type="button" onClick={() => removeBook(book)}>Delete</button>
+      </td>
     </tr>
   );
 }
 
 Book.propTypes = {
-  id: PropTypes.number.isRequired,
-  title: PropTypes.string.isRequired,
-  category: PropTypes.string.isRequired,
+  book: PropTypes.string.isRequired,
+  removeBook: PropTypes.func.isRequired,
 };
 
 export default Book;

@@ -1,4 +1,4 @@
-const creatAction = (book) => ({
+const createAction = (book) => ({
   type: 'CREATE_BOOK',
   book,
 });
@@ -8,4 +8,4 @@ const removeAction = (book) => ({
   book,
 });
 
-export { creatAction, removeAction };
+export { createAction, removeAction };
