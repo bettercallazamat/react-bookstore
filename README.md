@@ -4,7 +4,7 @@
 
 ## Watch the Live Version
 
-[Live Demo](https://bookstoredeployment.herokuapp.com/)
+[Live Demo](https://azamats-bookstore.herokuapp.com/)
 
 ### Built with
 
