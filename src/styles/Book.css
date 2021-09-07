@@ -1,0 +1,88 @@
+.Book {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 100px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+}
+
+.book-category {
+  display: block;
+  color: #888;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.book-author {
+  display: block;
+  margin-top: 3px;
+  color: #4386bf;
+}
+
+.books-actions {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.books-actions > * {
+  margin-right: 20px;
+  color: #4386bf;
+}
+
+.books-actions button {
+  border: none;
+  color: #4386bf;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.book-progress {
+  display: flex;
+  align-items: center;
+}
+
+.book-progress-chart {
+  display: flex;
+  align-items: center;
+  margin: 0 40px 0 0;
+}
+
+.book-progress-chart span {
+  display: block;
+  margin: 5px 0;
+}
+
+.percentage {
+  font-size: 30px;
+}
+
+.vertical-line {
+  height: 75px;
+  width: 2px;
+  background-color: #e8e8e8;
+}
+
+.book-progress-chapter {
+  margin: 0 100px 0 40px;
+}
+
+.book-progress-chapter > * {
+  display: block;
+}
+
+.book-progress-chapter .chapter-num {
+  margin: 10px 0 20px 0;
+}
+
+.book-progress-chapter button {
+  color: #fff;
+  padding: 8px 40px;
+  background-color: #0290ff;
+  border: none;
+  border-radius: 3px;
+}
