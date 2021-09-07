@@ -31,6 +31,8 @@ const BooksForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(createAction({ ...book, id: Math.floor(Math.random() * 100) }));
+    setBook({ title: '', category: '' });
+    e.target.reset();
   };
 
   return (
