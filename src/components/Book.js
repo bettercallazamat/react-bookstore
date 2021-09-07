@@ -14,8 +14,20 @@ function Book({ book, removeBook }) {
 }
 
 Book.propTypes = {
-  book: PropTypes.string.isRequired,
+  book: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    title: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
+  }),
   removeBook: PropTypes.func.isRequired,
+};
+
+Book.defaultProps = {
+  book: {
+    id: Math.floor(Math.random() * 100),
+    title: 'not defined',
+    category: 'not defined',
+  },
 };
 
 export default Book;

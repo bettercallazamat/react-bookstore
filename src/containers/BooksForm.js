@@ -14,8 +14,8 @@ const BooksForm = () => {
   const [book, setBook] = useState({ title: '', category: '' });
   const dispatch = useDispatch();
 
-  let title = '';
-  let category = '';
+  let title;
+  let category;
 
   const handleChange = (e) => {
     if (e.target.name === 'title') {
@@ -39,7 +39,6 @@ const BooksForm = () => {
     <form className="booksForm" onSubmit={handleSubmit}>
       <input type="text" name="title" onChange={handleChange} className="titleInput" />
       <select name="category" onChange={handleChange}>
-        <option disabled hidden selected>Choose category</option>
         {options}
       </select>
       <button type="submit">Add Book</button>
