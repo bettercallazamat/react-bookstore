@@ -4,7 +4,7 @@ import filterReducer from './filter';
 
 const rootReducer = combineReducers({
   bookReducer,
-  filterReducer 
+  filterReducer,
 });
 
 export default rootReducer;
