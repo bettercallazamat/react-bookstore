@@ -21,8 +21,8 @@ const BooksList = () => {
 
   return (
     <div className="BooksList">
-      <header>
-        <div className="header-leftside">
+      <header className="flex">
+        <div className="header-leftside flex">
           <h1>Bookstore CMS</h1>
           <span>BOOKS</span>
           <CategoryFilter CategoryFilter={handleFilterChange} />

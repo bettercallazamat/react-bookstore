@@ -38,12 +38,12 @@ const BooksForm = () => {
   return (
     <div className="form-container">
       <h2 className="title">ADD NEW BOOK</h2>
-      <form className="BooksForm" onSubmit={handleSubmit}>
+      <form className="BooksForm flex" onSubmit={handleSubmit}>
         <input type="text" name="title" onChange={handleChange} className="titleInput" placeholder="Book title" />
-        <select name="category" onChange={handleChange}>
+        <select name="category" onChange={handleChange} className="pointer">
           {options}
         </select>
-        <button type="submit">ADD BOOK</button>
+        <button type="submit" className="pointer">ADD BOOK</button>
       </form>
     </div>
   );

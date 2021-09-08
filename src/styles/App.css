@@ -1,16 +1,9 @@
 header {
-  display: flex;
   justify-content: space-between;
-  align-items: center;
-  background-color: #fff;
-  border-bottom: 1px solid #e8e8e8;
+  background-color: var(--white-color);
+  border-bottom: 1px solid var(--lightgrey-color);
   padding: 20px 100px;
   margin-bottom: 20px;
-}
-
-.header-leftside {
-  display: flex;
-  align-items: center;
 }
 
 .header-leftside > * {
@@ -31,7 +24,7 @@ header img {
 
 .BooksList {
   padding-bottom: 25px;
-  border-bottom: 2px solid #e8e8e8;
+  border-bottom: 2px solid var(--lightgrey-color);
 }
 
 .form-container {
@@ -39,14 +32,12 @@ header img {
 }
 
 .form-container .title {
-  color: #888;
+  color: var(--grey-color);
   font-size: 22px;
   margin-bottom: 20px;
 }
 
 .BooksForm {
-  display: flex;
-  align-items: center;
   justify-content: space-between;
   width: 100%;
   margin-bottom: 40px;
@@ -55,8 +46,8 @@ header img {
 .BooksForm > * {
   height: 40px;
   padding: 10px;
-  border: 1px solid #e8e8e8;
-  background-color: #fff;
+  border: 1px solid var(--lightgrey-color);
+  background-color: var(--white-color);
   border-radius: 3px;
   font-size: 16px;
   color: #c4c4c4;
@@ -72,6 +63,6 @@ input[type="text"] {
 
 .BooksForm button {
   width: 15%;
-  background-color: #0290ff;
-  color: #fff;
+  background-color: var(--azure-color);
+  color: var(--white-color);
 }

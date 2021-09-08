@@ -4,19 +4,19 @@ import '../styles/circular-prog-bar.css';
 
 function Book({ book, removeBook }) {
   return (
-    <div className="Book">
+    <div className="Book flex">
       <div className="book-main">
         <span className="book-category">{book.category}</span>
         <h2>{book.title}</h2>
         <span className="book-author">Author</span>
-        <ul className="books-actions">
+        <ul className="books-actions flex">
           <li>Comments</li>
-          <li><button type="button" onClick={() => removeBook(book)}>Remove</button></li>
+          <li><button className="pointer" type="button" onClick={() => removeBook(book)}>Remove</button></li>
           <li>Edit</li>
         </ul>
       </div>
-      <div className="book-progress">
-        <div className="book-progress-chart">
+      <div className="book-progress flex">
+        <div className="book-progress-chart flex">
           <div className="progress-circle p64">
             <div className="left-half-clipper">
               <div className="first50-bar" />
