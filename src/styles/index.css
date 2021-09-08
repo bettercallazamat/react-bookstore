@@ -1,0 +1,43 @@
+:root {
+  --white-color: #fff;
+  --greywhite-color: #fafafa;
+  --lightgrey-color: #e8e8e8;
+  --grey-color: #888;
+  --azure-color: #0290ff;
+  --lightblue-color: #4386bf;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--greywhite-color);
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 30px;
+  color: var(--azure-color);
+}
+
+h2 {
+  font-size: 20px;
+}
+
+span {
+  font-size: 15px;
+}
+
+.block {
+  display: block;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.pointer:hover {
+  cursor: pointer;
+}

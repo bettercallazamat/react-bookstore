@@ -6,6 +6,8 @@
 
 [Live Demo](https://azamats-bookstore.herokuapp.com/)
 
+![screenshot](./src/screenshot.png)
+
 ### Built with
 
 - JavaScript ES6
@@ -17,6 +19,16 @@
 - Buildpack
 - Heroku
 
+### Features
+- Filtering books by category
+- Adding a new book
+- Deleting a book
+
+### Future features
+- Progress monitoring
+- Commenting
+- Editing books
+- UI enhancements
 
 ## Getting Started
 
@@ -32,11 +44,6 @@ $ npm start
 
 Open `http://localhost:3000` to view running project in the browser.
 
-> Run the unit tests with
-```s
-$ npm run test
-```
-
 ## Author
 
 👤 **Azamat Nuriddinov**
@@ -45,6 +52,8 @@ $ npm run test
 - Twitter: [@azamat_nuriddin](https://twitter.com/azamat_nuriddin)
 - Linkedin: [Azamat Nuriddinov](https://www.linkedin.com/in/azamat-nuriddinov/)
 
+## Acknowledgements
+Thanks to @tiagobalmeida for [Circular Progress Bar With Plain HTML / CSS](https://github.com/tiagobalmeida/purecss-circular-progress-bar)
 
 ## 🤝 Contributing
 

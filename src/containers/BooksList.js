@@ -2,6 +2,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { removeAction, filterAction } from '../actions';
 import Book from '../components/Book';
 import CategoryFilter from '../components/CategoryFilter';
+import userIcon from '../user-icon.png';
 
 const BooksList = () => {
   const books = useSelector((state) => state.bookReducer);
@@ -19,32 +20,26 @@ const BooksList = () => {
   const filteredBooks = (filter !== 'All') ? books.filter((book) => book.category === filter) : books;
 
   return (
-    <div>
-      <h2>Books List</h2>
-      <div className="category-selection-container">
-        <CategoryFilter CategoryFilter={handleFilterChange} />
-      </div>
-      <table>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Title</th>
-            <th>Category</th>
-            <th>Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          {
-            filteredBooks.map((book) => (
-              <Book
-                key={book.id}
-                book={book}
-                removeBook={handleRemoveBook}
-              />
-            ))
-          }
-        </tbody>
-      </table>
+    <div className="BooksList">
+      <header className="flex">
+        <div className="header-leftside flex">
+          <h1>Bookstore CMS</h1>
+          <span>BOOKS</span>
+          <CategoryFilter CategoryFilter={handleFilterChange} />
+        </div>
+        <img src={userIcon} alt="user-icon" />
+      </header>
+      <main>
+        {
+          filteredBooks.map((book) => (
+            <Book
+              key={book.id}
+              book={book}
+              removeBook={handleRemoveBook}
+            />
+          ))
+        }
+      </main>
     </div>
   );
 };

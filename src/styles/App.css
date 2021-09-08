@@ -1,0 +1,68 @@
+header {
+  justify-content: space-between;
+  background-color: var(--white-color);
+  border-bottom: 1px solid var(--lightgrey-color);
+  padding: 20px 100px;
+  margin-bottom: 20px;
+}
+
+.header-leftside > * {
+  margin-right: 60px;
+}
+
+.header-leftside span,
+.header-leftside select {
+  font-size: 15px;
+  border: none;
+  background-color: transparent;
+}
+
+header img {
+  width: 40px;
+  height: 40px;
+}
+
+.BooksList {
+  padding-bottom: 25px;
+  border-bottom: 2px solid var(--lightgrey-color);
+}
+
+.form-container {
+  padding: 40px 100px;
+}
+
+.form-container .title {
+  color: var(--grey-color);
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.BooksForm {
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.BooksForm > * {
+  height: 40px;
+  padding: 10px;
+  border: 1px solid var(--lightgrey-color);
+  background-color: var(--white-color);
+  border-radius: 3px;
+  font-size: 16px;
+  color: #c4c4c4;
+}
+
+input[type="text"] {
+  width: 60%;
+}
+
+.BooksForm select {
+  width: 20%;
+}
+
+.BooksForm button {
+  width: 15%;
+  background-color: var(--azure-color);
+  color: var(--white-color);
+}
